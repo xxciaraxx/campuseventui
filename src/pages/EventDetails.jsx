@@ -1,4 +1,3 @@
-// pages/EventDetails.jsx
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 

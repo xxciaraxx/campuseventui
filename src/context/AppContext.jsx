@@ -1,8 +1,3 @@
-// context/AppContext.jsx
-// This file handles two things:
-// 1. Auth (login/logout)
-// 2. Events (add, delete, toggle status) using useReducer
-
 import { createContext, useContext, useReducer, useState } from 'react'
 
 // ─── AUTH CONTEXT ───────────────────────────────────────────────

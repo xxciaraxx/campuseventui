@@ -1,7 +1,3 @@
-// App.jsx
-// Sets up all routing using React Router
-// Uses React.lazy() + Suspense for lazy loading (Step 11)
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 
@@ -20,24 +16,23 @@ const Dashboard = lazy(() => import('./pages/Dashboard'))
 
 function App() {
   return (
-    // AuthProvider and EventsProvider wrap everything
-    // so all pages can access login state and events
+
     <AuthProvider>
       <EventsProvider>
         <BrowserRouter>
 
-          {/* Suspense shows a fallback while lazy pages are loading */}
+          {}
           <Suspense fallback={<div className="loading">Loading page...</div>}>
             <Routes>
 
-              {/* All pages share the Layout (Navbar + Outlet) */}
+              {}
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="events" element={<Events />} />
                 <Route path="events/:id" element={<EventDetails />} />
                 <Route path="login" element={<Login />} />
 
-                {/* Dashboard is protected — requires login */}
+                {}
                 <Route
                   path="dashboard"
                   element={

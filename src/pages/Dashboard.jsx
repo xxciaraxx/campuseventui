@@ -1,4 +1,3 @@
-// pages/Dashboard.jsx
 import { useState } from 'react'
 import { useEvents } from '../context/AppContext'
 
